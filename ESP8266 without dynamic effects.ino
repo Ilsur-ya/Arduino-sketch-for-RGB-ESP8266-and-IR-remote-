@@ -12,7 +12,7 @@ CRGB leds[LED_NUM];
 
 void setup() {
 
-  // put your setup code here, to run once:
+  //FastLED.setMaxPowerInVoltsAndMilliamps(5, 500); //Защита на случай если питания н е хватит
   Serial.begin(9600);   // выставляем скорость COM порта
   irrecv.enableIRIn();  // запускаем прием
   FastLED.addLeds< WS2812, LED_PIN, GRB>(leds, LED_NUM);
