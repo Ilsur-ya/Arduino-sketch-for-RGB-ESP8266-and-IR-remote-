@@ -106,7 +106,7 @@ void loop() {
 
 
         break;
-      case 0xFF38C7:  //РАДУГА)
+      case 0xFF38C7:  //РАДУГА)ЖОПА, НЕ ПРИНИМАЕТ СИГНАЛ ПОКА В ЦИКЛЕ
         
         while ((irrecv.decode(&results)) and (results.value == 16726215)) {
           
@@ -144,36 +144,6 @@ void loop() {
         int pos = beatsin16(13, 0, LED_NUM - 1);
         leds[pos] += CHSV(baza++, 255, 192);
         FastLED.setBrightness(bright);
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
-        FastLED.show();
-        break;
-      case 0xFFE01F:
-
-
         FastLED.show();
         break;
     }
